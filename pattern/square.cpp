@@ -1,9 +1,18 @@
 #include<iostream>
 using namespace std;
   
-void printSqaure( int n ){
+// void printSqaure( int n ){
+//     for (int row=1; row<=n; row++){
+//          for(int col=1; col<=n; col++){
+//             cout << "*";
+//          }
+//          cout << endl;
+//     }
+// }
+
+void printSqaure( int n , int m ){
     for (int row=1; row<=n; row++){
-         for(int col=1; col<=n; col++){
+         for(int col=1; col<=m; col++){
             cout << "*";
          }
          cout << endl;
@@ -12,5 +21,6 @@ void printSqaure( int n ){
   
 int main(){
     int n = 3;
-    printSqaure(n);
+    int m = 5;
+    printSqaure(n , m);
 }               
