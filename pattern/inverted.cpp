@@ -2,12 +2,12 @@
 using namespace std;
 
 void triangle( int n ){
-    for (int row=1; row<=n; row++){
-           for (int col=1; col<=(n-row+1); col++){
+     for(int i=1; i<=n; i++){
+        for(int j=1; j<=i; j++){
             cout << "*";
-           }
-           cout << endl;
-       }
+        }
+        cout << endl;
+     }
     
 }  
 int main(){
