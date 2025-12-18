@@ -4,17 +4,17 @@ using namespace std;
 
 int main(){
 
-    vector<int> it;
+    vector<int> its;
     vector<int> miles(10);
     vector<int> distance(15 , 0); 
 
    // cout << *(it.begin());
     
-   it.push_back(10);
-   it.push_back(20);
-   it.push_back(30);
-   it.push_back(40);
-   it.push_back(50);
+   its.push_back(10);
+   its.push_back(20);
+   its.push_back(30);
+   its.push_back(40);
+   its.push_back(50);
 
 
 //    for(int i: it){
@@ -23,6 +23,16 @@ int main(){
     
 //    it.insert(it.begin(), 50) ;
 //    cout << it.at(0); 
+
+       // traversing the vector by the use of iterator
+       // create an iterator
+       vector<int>::iterator it = its.begin(); // syntax
+
+       while(it != its.end()){
+        cout << *it << " ";
+        it++; 
+       }
+
 
     return 0;
 }
