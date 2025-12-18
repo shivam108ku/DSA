@@ -26,12 +26,30 @@ int main(){
 
        // traversing the vector by the use of iterator
        // create an iterator
-       vector<int>::iterator it = its.begin(); // syntax
+    //    vector<int>::iterator it = its.begin(); // syntax
 
-       while(it != its.end()){
-        cout << *it << " ";
-        it++; 
-       }
+    //    while(it != its.end()){
+    //     cout << *it << " ";
+    //     it++; 
+    //    }
+
+    // vector<vector<int>> arr(5 , vector<int>(5,0));
+    // int totalRow = arr.size();
+    // int totalCol = arr[0].size();
+
+    // jaggered vector
+
+    vector<vector<int>> arr(5, vector<int>(4,0));
+ 
+    arr[0] = vector<int>(4);
+    arr[1] = vector<int>(2);
+    arr[2] = vector<int>(5);
+    arr[3] = vector<int>(3);
+
+    int totalRow = arr.size();
+    int totalCol = arr[0].size();
+
+    int totalRowCount = brr.size(); 
 
 
     return 0;
