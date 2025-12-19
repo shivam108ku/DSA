@@ -48,7 +48,6 @@ int main(){
 
     int totalRow = arr.size();
     int totalCol = arr[0].size();
-
     int totalRowCount = brr.size(); 
 
 
