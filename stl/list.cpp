@@ -15,15 +15,39 @@ int main() {
 
     myList.size();
 
-    list<int>::iterator it = myList.begin();
+    list<int> myList2;
+    
+    myList2.push_back(100);
+    myList2.push_back(200);
+    myList2.push_back(300);
+    myList2.push_back(400);
 
-    cout << "Before removing";
+    // list<int>::iterator it = myList.begin();
+
+    // cout << "Before removing";
+    // while(it != myList.end()){
+    //     cout << *it << " ";
+    //     it++;
+    // }
+
+    // myList.remove(20);
+
+    // list<int>::iterator it2 = myList.begin();
+    // cout << "After removing";
+    // while(it2 != myList.end()){
+    //     cout << *it2 << " ";
+    //     it2++;
+    // }
+
+
+     list<int>::iterator it = myList.begin();
+    cout << "After removing";
     while(it != myList.end()){
         cout << *it << " ";
         it++;
     }
 
-    myList.remove(20);
+    myList.swap(myList2);
 
     list<int>::iterator it2 = myList.begin();
     cout << "After removing";
