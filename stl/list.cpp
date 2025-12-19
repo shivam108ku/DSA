@@ -17,9 +17,19 @@ int main() {
 
     list<int>::iterator it = myList.begin();
 
+    cout << "Before removing";
     while(it != myList.end()){
         cout << *it << " ";
         it++;
+    }
+
+    myList.remove(20);
+
+    list<int>::iterator it2 = myList.begin();
+    cout << "After removing";
+    while(it2 != myList.end()){
+        cout << *it2 << " ";
+        it2++;
     }
 
     return 0;
