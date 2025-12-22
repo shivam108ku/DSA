@@ -16,6 +16,7 @@ int main() {
         start++;
         end--;
     }
+    // also with another way 
 
     cout << "Reversed array: ";
     for (int i = 0; i < n; i++) {
