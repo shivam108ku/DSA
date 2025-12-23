@@ -2,14 +2,14 @@
 using namespace std;
 
 int recfact(int val){
-    if(n==1 || n== 0){
-        return;
+    if(val==1){
+        return 1;
     }
-    recFact( n * (n-1));
+    return val * recFact(val - 1);
 }
 
 
 int main(){
     int fact = 5;
-    recFact(fact);
+    cout << recFact(fact);
 }
