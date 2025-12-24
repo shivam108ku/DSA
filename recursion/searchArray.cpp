@@ -13,6 +13,11 @@ int searchArray(int arr[], int n , int index, int target){
     if(index >= n) {
         return -1;
     }
+    if(arr[index] == target){
+        return index;
+    }
+    int reckAns = searchArray(arr,n,index+1,target);
+    return reckAns;
 }
 
 
@@ -21,5 +26,5 @@ int main(){
     int size = 6;
     int index = 0;
     int target = 7;
-    searchArray(arr , size, index, target);
+    cout << searchArray(arr , size, index, target);
 }
