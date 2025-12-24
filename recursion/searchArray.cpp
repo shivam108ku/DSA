@@ -23,8 +23,8 @@ int searchArray(int arr[], int n , int index, int target){
 
 int main(){
     int arr[] = {2,4,2,4,5,7};
-    int size = 6;
+    int n = 6;
     int index = 0;
     int target = 7;
-    cout << searchArray(arr , size, index, target);
+    cout << searchArray(arr , n, index, target);
 }
