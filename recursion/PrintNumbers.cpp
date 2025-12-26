@@ -21,4 +21,5 @@ int main() {
     printNum(n);
 
     return 0;
+    // cout this thing
 }
