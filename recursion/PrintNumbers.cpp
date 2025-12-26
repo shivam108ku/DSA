@@ -12,7 +12,7 @@ void printNum(int n) {
     // Work
     cout << n << " ";
 }
-
+// the ay to add this
 int main() {
     int n;
     cout << "Enter N: ";
