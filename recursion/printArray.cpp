@@ -1,17 +1,24 @@
-#include<iostream>
+#include <iostream>
+#include <vector>
 using namespace std;
 
-void printArray(int arr[], int size, int index){
-     if(index >= size){
+void printArray(vector<int> &arr, int index) {
+    // base case
+    if (index == arr.size()) {
         return;
-     }
-     cout << arr[index];
-     printArray(arr , size , index+1);
+    }
+
+    // current element print
+    cout << arr[index] << " ";
+
+    // recursive call
+    printArray(arr, index + 1);
 }
 
-int main(){
-    int arr[] = {2,4,2,4,5,7};
-    int size = 6;
-    int index = 0;
-    printArray(arr , size , index);
+int main() {
+    vector<int> arr = {1, 2, 3, 4, 5};
+
+    printArray(arr, 0);
+
+    return 0;
 }
